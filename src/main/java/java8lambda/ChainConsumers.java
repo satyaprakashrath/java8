@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
+import com.google.common.base.Predicate;
+
 public class ChainConsumers {
 	
 	public static void main(String[] args) {
@@ -17,6 +19,7 @@ public class ChainConsumers {
 		
 		strings.forEach(c1.andThen(c2));
 		System.out.println("size of result:"+result.size());
+		
 	}
 
 }
